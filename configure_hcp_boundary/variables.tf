@@ -108,3 +108,33 @@ variable "vault_path" {
   type        = string
   description = "The Vault path to request creds"
 }
+
+variable "boundary_static_host_name" {
+  type        = string
+  description = "Name of the static host to create in Boundary"
+}
+
+variable "boundary_static_host_desc" {
+  type        = string
+  description = "Description of the static host to create in Boundary"
+}
+
+variable "boundary_static_host_addr" {
+  type        = string
+  description = "Address of the static host to create in Boundary"
+}
+
+variable "boundary_target_host_name" {
+  type        = string
+  description = "Boundary target host name"
+}
+
+variable "boundary_target_host_desc" {
+  type        = string
+  description = "Boundary target host description"
+}
+
+variable "boundary_target_host_port" {
+  type        = string
+  description = "Boundary target host port"
+}
