@@ -8,6 +8,16 @@ variable "boundary_auth_method_id" {
   description = "ID of the auth method in Boundary"
 }
 
+variable "boundary_catalog_name" {
+  type        = string
+  description = "Name of the Boundary catalog"
+}
+
+variable "boundary_catalog_desc" {
+  type        = string
+  description = "Description of the Boundary catalog"
+}
+
 variable "boundary_username" {
   type        = string
   description = "Boundary username"
@@ -81,4 +91,20 @@ variable "db_username" {
 variable "db_password" {
   type        = string
   description = "DB password"
+}
+
+
+variable "boundary_cred_lib_name" {
+  type        = string
+  description = "(optional) describe your variable"
+}
+
+variable "boundary_cred_lib_desc" {
+  type        = string
+  description = "(optional) describe your variable"
+}
+
+variable "vault_path" {
+  type        = string
+  description = "The Vault path to request creds"
 }

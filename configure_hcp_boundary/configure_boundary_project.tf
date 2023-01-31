@@ -12,12 +12,3 @@ resource "boundary_scope" "project" {
   scope_id               = boundary_scope.org.id
   auto_create_admin_role = true
 }
-
-resource "boundary_credential_store_vault" "vault" {
-  name        = var.vault_store_name
-  description = var.vault_store_description
-  address     = var.vault_address
-  namespace   = var.vault_namespace
-  token       = var.vault_token
-  scope_id    = boundary_scope.project.id
-}
