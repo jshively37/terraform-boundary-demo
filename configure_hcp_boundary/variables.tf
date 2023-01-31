@@ -104,41 +104,6 @@ variable "boundary_cred_lib_desc" {
   description = "(optional) describe your variable"
 }
 
-# variable "boundary_host_name" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
-
-# variable "boundary_host_address" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
-
-# variable "boundary_host_set_name" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
-
-# variable "boundary_host_desc" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
-
-# variable "boundary_target_name" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
-
-# variable "boundary_target_desc" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
-
-# variable "boundary_target_port" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
-
 variable "vault_path" {
   type        = string
   description = "The Vault path to request creds"
