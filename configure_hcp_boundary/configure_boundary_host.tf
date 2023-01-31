@@ -6,6 +6,7 @@ resource "boundary_host_static" "host" {
 }
 
 resource "boundary_host_set_static" "host" {
+  name            = var.boundary_host_set_name
   host_catalog_id = boundary_host_catalog_static.catalog.id
   host_ids = [
     boundary_host_static.host.id,
