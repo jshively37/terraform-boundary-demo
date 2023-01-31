@@ -138,3 +138,8 @@ variable "boundary_target_host_port" {
   type        = string
   description = "Boundary target host port"
 }
+
+variable "boundary_host_set_name" {
+  type        = string
+  description = "Name of the Boundary host set"
+}
